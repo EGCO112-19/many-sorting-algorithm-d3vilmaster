@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
          printf("argv %d: %s\n",i,argv[i]); 
   }
 
-  N=argc-1;
+  N=argc-2;
 
   int *a;
   a=(int*) malloc(sizeof(int)*N);
