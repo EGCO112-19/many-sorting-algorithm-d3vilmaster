@@ -21,7 +21,8 @@ void bubble(int a[], int N){
     int i;
     int j;
     int sorted;
-  for(i=N-1;i>0;i--){
+    int w = 1;
+  for(i=N-1;i>0;i--, w++){
     sorted=0;
     for(j=0;j<i;j++){
         if(a[j]>a[j+1]) {// decending
@@ -31,7 +32,7 @@ void bubble(int a[], int N){
         display(a,N);
     }
     
-    printf("\t===end of round %d===\n",i);
+    printf("\t===end of round %d===\n",w);
     if (sorted==0) break;
   }
     
